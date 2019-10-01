@@ -1,0 +1,8 @@
+.ipynb_checkpoints/**
+**/__pycache__/**
+.idea/*
+multiwoz/data/**
+!multiwoz/data/.gitkeep
+compute/20*/**
+compute/*.zip
+!compute/template/**
