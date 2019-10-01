@@ -1,0 +1,290 @@
+intents:
+  - inform
+  - bye
+
+entities:
+  - attraction_area
+  - attraction_name
+  - attraction_type
+  - hotel_area
+  - hotel_day
+  - hotel_internet
+  - hotel_name
+  - hotel_parking
+  - hotel_pricerange
+  - hotel_reference
+  - hotel_stars
+  - hotel_type
+  - restaurant_area
+  - restaurant_day
+  - restaurant_food
+  - restaurant_name
+  - restaurant_pricerange
+  - restaurant_reference
+  - restaurant_time
+  - taxi_departure
+  - taxi_destination
+  - taxi_leaveAt
+  - taxi_type
+  - train_arriveBy
+  - train_day
+  - train_departure
+  - train_destination
+  - train_leaveAt
+  - train_reference
+  - train_trainID
+
+actions:
+  - action_book_hotel
+  - action_book_restaurant
+  - action_book_taxi
+  - action_book_train
+  - book_booking_attraction
+  - book_booking_hotel
+  - book_booking_restaurant
+  - book_booking_taxi
+  - book_booking_train
+  - bye_general
+  - greet_general
+  - inform_attraction
+  - inform_booking_attraction
+  - inform_booking_hotel
+  - inform_booking_restaurant
+  - inform_booking_taxi
+  - inform_booking_train
+  - inform_hotel
+  - inform_restaurant
+  - inform_taxi
+  - inform_train
+  - nobook_booking_attraction
+  - nobook_booking_hotel
+  - nobook_booking_restaurant
+  - nooffer_attraction
+  - nooffer_hotel
+  - nooffer_restaurant
+  - nooffer_train
+  - offerbook_train
+  - offerbooked_train
+  - recommend_attraction
+  - recommend_hotel
+  - recommend_restaurant
+  - reqmore_general
+  - request_attraction
+  - request_booking_attraction
+  - request_booking_hotel
+  - request_booking_restaurant
+  - request_booking_taxi
+  - request_hotel
+  - request_restaurant
+  - request_taxi
+  - request_train
+  - select_attraction
+  - select_hotel
+  - select_restaurant
+  - select_train
+  - welcome_general
+
+templates:
+  action_book_hotel:
+  - text: "action_book_hotel"
+  action_book_restaurant:
+  - text: "action_book_restaurant"
+  action_book_taxi:
+  - text: "action_book_taxi"
+  action_book_train:
+  - text: "action_book_train"
+  book_booking_attraction:
+  - text: "book_booking_attraction"
+  book_booking_hotel:
+  - text: "book_booking_hotel"
+  book_booking_restaurant:
+  - text: "book_booking_restaurant"
+  book_booking_taxi:
+  - text: "book_booking_taxi"
+  book_booking_train:
+  - text: "book_booking_train"
+  bye_general:
+  - text: "bye_general"
+  greet_general:
+  - text: "greet_general"
+  inform_attraction:
+  - text: "inform_attraction"
+  inform_booking_attraction:
+  - text: "inform_booking_attraction"
+  inform_booking_hotel:
+  - text: "inform_booking_hotel"
+  inform_booking_restaurant:
+  - text: "inform_booking_restaurant"
+  inform_booking_taxi:
+  - text: "inform_booking_taxi"
+  inform_booking_train:
+  - text: "inform_booking_train"
+  inform_hotel:
+  - text: "inform_hotel"
+  inform_restaurant:
+  - text: "inform_restaurant"
+  inform_taxi:
+  - text: "inform_taxi"
+  inform_train:
+  - text: "inform_train"
+  nobook_booking_attraction:
+  - text: "nobook_booking_attraction"
+  nobook_booking_hotel:
+  - text: "nobook_booking_hotel"
+  nobook_booking_restaurant:
+  - text: "nobook_booking_restaurant"
+  nooffer_attraction:
+  - text: "nooffer_attraction"
+  nooffer_hotel:
+  - text: "nooffer_hotel"
+  nooffer_restaurant:
+  - text: "nooffer_restaurant"
+  nooffer_train:
+  - text: "nooffer_train"
+  offerbook_train:
+  - text: "offerbook_train"
+  offerbooked_train:
+  - text: "offerbooked_train"
+  recommend_attraction:
+  - text: "recommend_attraction"
+  recommend_hotel:
+  - text: "recommend_hotel"
+  recommend_restaurant:
+  - text: "recommend_restaurant"
+  reqmore_general:
+  - text: "reqmore_general"
+  request_attraction:
+  - text: "request_attraction"
+  request_booking_attraction:
+  - text: "request_booking_attraction"
+  request_booking_hotel:
+  - text: "request_booking_hotel"
+  request_booking_restaurant:
+  - text: "request_booking_restaurant"
+  request_booking_taxi:
+  - text: "request_booking_taxi"
+  request_hotel:
+  - text: "request_hotel"
+  request_restaurant:
+  - text: "request_restaurant"
+  request_taxi:
+  - text: "request_taxi"
+  request_train:
+  - text: "request_train"
+  select_attraction:
+  - text: "select_attraction"
+  select_hotel:
+  - text: "select_hotel"
+  select_restaurant:
+  - text: "select_restaurant"
+  select_train:
+  - text: "select_train"
+  welcome_general:
+  - text: "welcome_general"
+
+slots:
+  attraction_area:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  attraction_name:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  attraction_type:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  hotel_area:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  hotel_day:
+    type: text
+  hotel_internet:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  hotel_name:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  hotel_parking:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  hotel_pricerange:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  hotel_reference:
+    type: text
+  hotel_stars:
+    type: text
+  hotel_type:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  restaurant_area:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  restaurant_day:
+    type: text
+  restaurant_food:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  restaurant_name:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  restaurant_pricerange:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  restaurant_reference:
+    type: text
+  restaurant_time:
+    type: text
+  taxi_departure:
+    type: text
+  taxi_destination:
+    type: text
+  taxi_leaveAt:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  taxi_type:
+    type: text
+  train_arriveBy:
+    type: text
+  train_day:
+    type: text
+  train_departure:
+    type: text
+  train_destination:
+    type: categorical
+    values:
+    - dontcare
+    - specific
+  train_leaveAt:
+    type: text
+  train_reference:
+    type: text
+  train_trainID:
+    type: text

@@ -1,0 +1,15 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+pipeline: supervised_embeddings
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: EmbeddingPolicy
+    max_history: 2  # default: 5
+    batch_strategy: "sequence" # default: "balanced"
+    epochs: 100 # default: 1
+    random_seed: 2019  # default: null
+    evaluate_on_num_examples: 0 # default: 100
+  - name: FormPolicy
